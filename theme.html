@@ -1,18 +1,105 @@
+<!doctype html>
 <html>
-<head>
-	<title>Zachary</title>
-</head>
-<body>
-	<div>
-		<h1></h1>
-	</div>
-	<div>
-		<p></p>
-	</div>
-	<div class="post">
-		<div class="title"></div>
-		<div class="text"></div>
-		<div class="timestamp"></div>
-	</div>
-</body>
+    <head>
+        <meta charset="utf8"/>
+        <title>Artsy Theme | {block:Title} {Title} {/block:Title}</title>
+        
+        {block:Description}
+        <meta name="description" content="{MetaDescription}"/>
+        {/block:Description}
+
+        {block:Hidden}
+        <meta name="font:Title" content=""/>
+        <meta name="font:Body" content=""/>
+        <meta name="color:Masthead Text and Links" content=""/>
+        <meta name="color:Body Text" content=""/>
+        <meta name="imag:Background" content=""/>
+        {/block:Hidden}
+
+        <link rel="shorcut icon" href="{Favicon}"/>
+        <link rel="stylesheet" href="theme.css"/>
+    </head>
+
+    <body>
+        <header>
+            <div class="meta-wrapper">
+                {block:ShowAvatar}
+                <img class="portait global-shape-{AvatarShape}" src="{PortraitUrl-128}" alt="">
+                {/block:ShowAvatar}
+
+                <div class="blog-details">
+                    {block:ShowTitle}
+                    <h1 class="blog-title">
+                        <a href="/" title="{lang:Home}">{Title}</a>
+                    </h1>
+                    {/block:ShowTitle}
+
+                    {block:ShowDescription}
+                    {block:Description}
+                    <p class="blog-description">{Description}</p>
+                    {/block:Description}
+                    {/block:ShowDescription}
+                </div>
+
+            </div>
+
+            <form action="/search" method="get">
+                <input type="text" name="search" value="{SearchQuery}" placeholder="Search...">
+            </form>
+        </header>
+
+        {block:SearchPage}
+        <div></div>
+        {/block:SearchPage}
+
+        {block:TagPage}
+        <div></div>
+        {/block:TagPage}
+
+        <main>
+            {block:Posts}
+            <article>
+                {block:Text}
+                {/block:Text}
+
+                {block:Photo}
+                {/block:Photo}
+
+                {block:Photoset}
+                {/block:Photoset}
+
+                {block:Quote}
+                {/block:Quote}
+
+                {block:Link}
+                {/block:Link}
+
+                {block:Chat}
+                {/block:Chat}
+
+                {block:Audio}
+                {/block:Audio}
+
+                {block:Video}
+                {/block:Video}
+
+                {block:Answer}
+                {/block:Answer}
+
+                {block:Date}
+                {/block:Date}
+                
+            </article>
+            {/block:Posts}
+        </main>
+
+        {block:Pagination}
+        <nav>
+            <ul>
+                {block:PreviousPage}<li><a href="{PreviousPage}">{lang:Previous}</a></li>{/block:PreviousPage}
+                {block:NextPage}<li><a href="{NextPage}">{lang:Next}</a></li>{/block:NextPage}
+            </ul>
+        </nav>
+        {/block:Pagination}
+    </body>
 </html>
