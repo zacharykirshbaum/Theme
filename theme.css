@@ -1,0 +1,110 @@
+/* Positioning */
+img {
+	width: 100%;
+	height: 100%;
+}
+
+#sidebar {
+    width: 25%;
+    display: block;
+    z-index: 1;
+    float: left;
+    padding: 0 3rem;
+    box-shadow: inset -20px 0 20px -2px rgba(10, 10, 10, .25);
+}
+
+.sidebar-divider {
+	background-color: black;
+	display: block;
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 1.2rem;
+	border-radius: 10px;
+}
+
+.post {
+	width: 25%;
+	margin: 5px;
+	border: 5px solid white;
+	border-radius: 5px;
+}
+
+.post-media {
+	width: 100%;
+	height: 100%;
+	box-shadow: inset -20px 0 20px -13px rgba(10, 10, 10, .25);
+}
+
+.post-media:before {
+	content: "";
+	padding-top: 100%;
+	display: block;
+}
+
+.post-link {
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.post-thumbnail {
+	height: 100%;
+	width: 100%;
+
+	background-size: cover;
+}
+
+#nav-wrapper {
+	/*float: bottom;*/
+}
+
+#about-content {
+	text-align: left;
+}
+
+#about-name {
+	font-weight: bold;
+}
+
+#blog-content {
+	display: flex;
+	padding: 5px;
+	flex-wrap: wrap;
+	width: 60%;
+	float: right;
+}
+
+#profile-pic {
+	vertical-align: center;
+	display: block;
+	max-width: 100%;
+}
+
+.blog-title-wrapper {
+	/*display: block;*/
+}
+
+#page {
+	overflow: hidden;
+}
+
+.avatar-figure {
+    position: absolute;
+}
+
+.avatar {
+	background: #666 50% 50% no-repeat;
+    background-size: 106px 106px;
+    border-radius: 4px;
+    display: block;
+    height: 106px;
+    width: 106px;
+    border: 4px solid #f6f6f6;
+    position: relative;
+    margin: auto;
+}

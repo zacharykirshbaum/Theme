@@ -1,0 +1,2271 @@
+<!-- - - - - - - - - - - - - - - - - - - - - - - - 
+
+    Theme name: Astoria Theme v1.1
+    Theme Author: Artistic Influence
+    Author URL: [http://artistic-influence.tumblr.com/]
+
+- - - - - - - - - - - - - - - - - - - - - - -  -->
+<html
+lang="{block:English}en{/block:English}{block:Spanish}es{/block:Spanish}{block:French}fr{/block:French}{block:Italian}it{/block:Italian}{block:German}de{/block:German}{block:Polish}pl{/block:Polish}{block:Japanese}ja{/block:Japanese}">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,user-scalable=false">
+        
+        <title>{Title}{block:SearchPage} - ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage}{block:PostSummary} - {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>
+        <meta name="author" content="{Title}">
+        
+        {block:Description}
+        <meta name="description" content="{MetaDescription}">
+        {/block:Description}
+        
+        <link rel="shortcut icon" href="{Favicon}">
+        <link rel="apple-touch-icon" href="{PortraitURL-128}">
+        <link rel="alternate" type="application/rss+xml" href="{RSS}">
+        
+        <meta name="select:Columns" title="3" content="three-col">
+        <meta name="select:Columns" title="2" content="">
+        <meta name="select:Menu Avatar Shape" title="Circle" content="circle">
+        <meta name="select:Menu Avatar Shape" title="Square" content="square">
+        <meta name="select:Tint Strength" title="No Tint" content="1">
+        <meta name="select:Tint Strength" title="Medium Tint" content=".6">
+        <meta name="select:Tint Strength" title="Strong Tint" content=".3">
+        
+        <!-- images -->
+        <meta name="image:About Me Image" content="//static.tumblr.com/6da5222170a390afefa296f637ac0a67/vppzax2/00Ionyxfp/tumblr_static_za0ej12lq5w8g4wcoo4skg00.jpg">
+
+        <!-- colors --> 
+        <meta name="color:Background Color" content="#fafafa">
+        <meta name="color:Background Cover Tint Color" content="#000000">
+        <meta name="color:Blog Title Color" content="#000000">
+        <meta name="color:Sidebar Text Color" content="#000000">
+        <meta name="color:Sidebar Title Background Color" content="#000000"> 
+        <meta name="color:Sidebar Title Text Color" content="ffffff"> 
+        <meta name="color:Sidebar Follow Button Color" content="#ee0000"> 
+        <meta name="color:Sidebar Follow Text Color" content="#ffffff">
+        <meta name="color:Body Text Color" content="#000000">
+        <meta name="color:Linked Text Color" content="#3485ad">
+        <meta name="color:Top Bar Background Color" content="#000000"> 
+        <meta name="color:Top Bar Text Color" content="#ffffff">
+        <meta name="color:Post Meta Text Color" content="#000000">
+        <meta name="color:Post Background Color" content="#ffffff">
+        <meta name="color:Tag Text Color" content="#ffffff">
+        <meta name="color:Tag Background Color" content="#3485ad">
+        <meta name="color:Single Post Page Accent Color" content="#dddddd">
+        <meta name="color:Link Post Button Text Color" content="#ffffff">
+        <meta name="color:Link Post Button Background Color" content="#000000">
+        <meta name="color:Chat Post Background Color" content="#000000">
+        <meta name="color:Chat Post Text Color" content="#ffffff">
+        <meta name="color:Load More Button Color" content="#000000">
+        <meta name="color:Load More Button Background Color" content="#ffffff">
+        <meta name="color:Footer Text Color" content="#000000">
+        <meta name="color:Loading Screen Bar Color" content="#ffffff">
+        <meta name="color:Loading Screen Background Color" content="#000000"> 
+        
+        <!-- booleans -->
+        <meta name="if:Enable Google Fonts" content="1">
+        <meta name="if:Infinite Scroll" content="0"> 
+        <meta name="if:Disable ScrollReveal" content="0">
+        <meta name="if:Disable SmoothScroll" content="0">
+        <meta name="if:Enable Title Letter Spacing" content="0">
+        <meta name="if:Hide Header Avatar" content="0"> 
+        <meta name="if:Hide About Me Section" content="0"> 
+        <meta name="if:Hide Follow Me Section" content="0"> 
+        <meta name="if:Hide Social Links Section" content="0">
+        <meta name="if:Hide RSS" content="1"> 
+        <meta name="if:Hide Recent Likes Feed" content="0">
+        <meta name="if:Hide Facebook Comments" content="0"> 
+        <meta name="if:Hide Pages In Menu" content="0"> 
+        <meta name="if:Hide Tags In Menu" content="0"> 
+        <meta name="if:Hide Menu Search" content="0">
+        <meta name="if:Force Full Width Photo Posts" content="0"> 
+        <meta name="if:Force Full Width Text Post Images" content="0">
+        
+        <!-- Tumblr fonts -->
+        <meta name="font:Body Font" content="Futura, 'Century Gothic', AppleGothic, sans-serif"> 
+        
+        <!-- text -->
+        <meta name="text:Pre Loader Text Message" content="Your Custom Loader Message Here">
+        <meta name="text:Menu Pages Label" content="Pages">
+        <meta name="text:Menu Tags Label" content="Tags">
+        <meta name="text:Menu Tag 1" content="">
+        <meta name="text:Menu Tag 2" content="">
+        <meta name="text:Menu Tag 3" content="">
+        <meta name="text:Menu Tag 4" content="">
+        <meta name="text:Menu Tag 5" content="">
+        <meta name="text:Menu Tag 6" content="">
+        <meta name="text:Menu Tag 7" content="">
+        <meta name="text:Menu Tag 8" content="">
+        <meta name="text:Menu Home Label" content="HOME"> 
+        <meta name="text:Menu Ask Label" content="ASK"> 
+        <meta name="text:Menu Submit Post Label" content="SUBMIT POST">
+        <meta name="text:Menu Archive Label" content="ARCHIVE">
+        <meta name="text:Menu Send Email Label" content="EMAIL ME">
+        <meta name="text:Menu Send Email Address" content="example@email.com">
+        <meta name="text:Sidebar Follow Title" content="STAY UPDATED"> 
+        <meta name="text:Sidebar About Me Title" content="ABOUT ME">
+        <meta name="text:Sidebar About Me Content Heading" content="Enzo North">
+        <meta name="text:Sidebar About Me Content" content="I am bold, daring and fearless, I make no effort to stand out from the crowd, this sort of thing comes naturally to me. I am the pattern on a plain canvas from which excitement springs. I am guilty of being different and make no effort to change. I'm the best me possible and i'm getting better day by day just like they say about wine.">
+        <meta name="text:Sidebar Social Links Title" content="Social">
+        <meta name="text:Sidebar Recent Likes Title" content="Recently Liked">
+        <meta name="text:Sidebar Banner Code" content="">
+        <meta name="text:Footer Text Message" content="Your footer message">
+        <meta name="text:Post Heading Font Weight" content="400">
+        <meta name="text:Body Text Font Weight" content="300">
+        <meta name="text:Title Font Weight" content="700">
+        <meta name="text:Title Font Size" content="8.5rem">
+        <meta name="text:Google Font Body" content="//fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+        <meta name="text:Body Font Name" content="'Montserrat', sans-serif">
+        <meta name="text:Google Font Post Heading" content="">
+        <meta name="text:Post Heading Font Name" content="'Montserrat', sans-serif">
+        <meta name="text:Google Font Title" content="//fonts.googleapis.com/css?family=Oswald:300,400,500,600,700">
+        <meta name="text:Title Font Name" content="'Oswald', sans-serif">
+        <meta name="text:Google Analytics Code" content="">
+        <meta name="text:Twitter Feed Title" content="Twitter">
+        <meta name="text:Twitter Feed Embed Code" content="">
+        <meta name="text:Facebook Feed Title" content="Facebook">
+        <meta name="text:Facebook Feed Page URL" content="">
+        <meta name="text:Pinterest Feed Title" content="Pinterest">
+        <meta name="text:Pinterest Board URL" content="">
+        <meta name="text:Instagram Feed Title" content="Instagram">
+        <meta name="text:Instagram ID" content="">
+        <meta name="text:Instagram Token" content="">
+        <meta name="text:Instagram Feed Count" content="8">
+        <meta name="text:Disqus Shortname" content="">
+        <meta name="text:Facebook URL" content="">
+        <meta name="text:Twitter URL" content="">
+        <meta name="text:Google Plus URL" content="">
+        <meta name="text:Instagram URL" content="">
+        <meta name="text:VK URL" content="">
+        <meta name="text:Youtube URL" content="">
+        <meta name="text:Vine URL" content="">
+        <meta name="text:Pinterest URL" content="">
+        <meta name="text:Vimeo URL" content="">
+        <meta name="text:Flickr URL" content="">
+        <meta name="text:DeviantArt URL" content="">
+        <meta name="text:Dribble URL" content="">
+        <meta name="text:Soundcloud URL" content="">
+        <meta name="text:Spotify URL" content="">
+        <meta name="text:Stumbleupon URL" content="">
+        <meta name="text:Behance URL" content="">
+        <meta name="text:Linkedin URL" content="">
+        
+        {block:IfEnableGoogleFonts}
+        <!-- links -->
+        <link rel="stylesheet" href="{text:Google Font Body}" type='text/css'>
+        <link rel="stylesheet" href="{text:Google Font Post Heading}" type='text/css'>
+        <link rel="stylesheet" href="{text:Google Font Title}" type='text/css'>
+        {/block:IfEnableGoogleFonts}
+        
+        <!-- external stylesheets -->
+        <link rel="stylesheet" href="//static.tumblr.com/honophf/oD9oz5mht/main.min.css">
+        <script src="//static.tumblr.com/cmghtlm/otvnkkd1g/modernizr.js"></script>
+        <script src="//static.tumblr.com/cmghtlm/evUnkz8ov/queryloader2.min.js" type="text/javascript"></script>
+        <script src="//static.tumblr.com/vppzax2/6nOolnayz/resizesensor.js"></script>
+        <script src="//static.tumblr.com/vppzax2/3myolnazi/elementqueries.js"></script>
+        
+        <style type="text/css">
+
+            /* customiables */
+
+            /* typography */
+            body, p, a, em, strong, b, h1, h2, h3, h4, h5, h6, code, pre, textarea, button, input {
+                font-family: {block:IfEnableGoogleFonts}{block:IfBodyFontName}{text:Body Font Name},{/block:IfBodyFontName}{/block:IfEnableGoogleFonts} {font:Body Font}
+            }
+            body, p, em, code, pre, textarea, button, input {
+                font-weight: {text:Body Text Font Weight}
+            }
+            body, p, h1, h2, h3, h4, h5, h6, code, pre, blockquote, .post-media.link h2 a, .title-link, .more_notes_link, a.pagi-previous, a.pagi-next, a.more_notes_link, a.perma-post-title, .perma-post-asker h2 a, .perma-post-answer h2 a {
+                color: {color:Body Text Color}
+            }
+            .post-entry .date:after, .post-divider {
+                background-color: {color:Body Text Color}
+            }
+            a, .post-colophon p, .post-colophon a, .creation a, .permalink-content-area span a:hover {
+                color: {color:Linked Text Color}
+            }
+            a.title-link, a.perma-post-title, .post-asker h2, .post-asker h2 a, .post-answer h2, .post-answer h2 a, .perma-post-asker h2, .perma-post-asker h2 a, .perma-post-answer h2, .perma-post-answer h2 a {
+                font-family: {block:IfEnableGoogleFonts}{block:IfPostHeadingFontName}{text:Post Heading Font Name},{/block:IfPostHeadingFontName}{/block:IfEnableGoogleFonts} {font:Body Font};
+            }
+            h1, h2, h3, h4, h5, h6 {
+                font-weight: {text:Post Heading Font Weight}
+            }
+            .post-author p, .post-author p a, .post-note-count p a, .colophon-wrap p a, .colophon-wrap p {
+                color: {color:Post Meta Text Color};
+            }
+            .post-tags p a, .perma-side-tags a {
+                color: {color:Tag Text Color};
+                background-color: {color:Tag Background Color};
+            }
+            
+            /* background */
+            #masthead, .off-canvas-wrap, .content-area, .blog-footer, .instagram-wrapper, #offCanvas, .off-canvas-bg, .bg-tint {
+                background-color: {color:Background Color}
+            }
+            {block:ShowHeaderImage} 
+            .bg-cover {
+                opacity: {select:Tint Strength}
+            }
+            .bg-tint {
+                background-color: {color:Background Cover Tint Color}!important;
+            }
+            {/block:ShowHeaderImage} 
+            
+            /* top bar */
+            .show-bg,
+            .top-bar .submenu,
+            .top-bar, 
+            .top-bar ul{
+                background: {color:Top Bar Background Color}!important
+            }
+            .lines, .lines:before, .lines:after, .left-off-canvas-toggle .btn-slide {
+                background: {color:Top Bar Text Color}
+            }
+            .top.menu-nav li a,
+            .search-box a {
+                color: {color:Top Bar Text Color}
+            }
+            .is-accordion-submenu-parent>a:after,
+            .dropdown.menu>li.is-dropdown-submenu-parent>a:after {
+                border-color: {color:Top Bar Text Color} transparent transparent
+            }
+            
+            /* header */
+            .mast-title, .blog-footer h2 {
+                font-family: {block:IfEnableGoogleFonts}{block:IfTitleFontName}{text:Title Font Name},{/block:IfTitleFontName}{/block:IfEnableGoogleFonts} {TitleFont};
+                font-weight: {text:Title Font Weight};
+                {block:IfEnableTitleLetterSpacing}
+                letter-spacing: .3rem
+                {/block:IfEnableTitleLetterSpacing}
+            }
+            .mast-title {
+                {color:Blog Title Color}
+            }
+            .mast-description, .header-social li a, #masthead p {
+                color: {color:Sidebar Text Color}
+            }
+            .header-avatar img,
+            .header-social li {
+                border-color: {color:Sidebar Text Color}
+            }
+            .header-avatar img {
+                background-color: {color:Sidebar Text Color}
+            }
+            #masthead .sidebar-title, #masthead .sidebar-title:before {
+                background-color: {color:Sidebar Title Background Color}
+            }
+            #masthead .accordion-menu .is-accordion-submenu-parent:not(.has-submenu-toggle) > a::after {
+                border-color: {color:Sidebar Text Color} transparent transparent;
+            }
+            .sidebar-title, #masthead .sidebar-title p, #masthead .sidebar-title a {
+                color: {color:Sidebar Title Text Color}
+            }
+            .side-social li:hover a {
+                color: {color:Background Color}
+            }
+
+            
+            /* pre-loader */
+            #qLoverlay::after {
+                color: {color:Loading Screen Bar Color};
+                content: '{text:Pre Loader Text Message}';
+            }    
+            
+            /* posts */
+            .post .post-entry, .post-media, .post-share, .post-single, .perma-right-sidebar, .white-pad {
+                background-color: {color:Post Background Color};
+            }
+            .post.text .title-container h2 {
+                background: {color:Body Text Color};
+            }
+            .post.text .title-container h2 a {
+                color: {color:Post Background Color};
+            }
+            .post.chat .post-entry {
+                background-color: {color:Chat Post Background Color}
+            }
+            .post.chat .title-link, .post-chat p, .post-chat b, .single-post.chat .title-link, .post.chat .post-author p, .post.chat .post-author p a, .post.chat .post-note-count p a {
+                color: {color:Chat Post Text Color} 
+            }
+            .visit-link {
+                background-color: {color:Link Post Button Background Color};
+                border: 2px solid {color:Link Post Button Background Color}
+            }
+            .visit-link h5, .visit-link p {
+                color: {color:Link Post Button Text Color}
+            }
+            
+            /* permalink page posts */
+            a.pagi-previous:before, a.pagi-next:before, .more_notes_link:before {
+                background-color: {color:Single Post Page Accent Color};
+            }
+            /* permalink sidear title top and bottom borders */
+            h4.sidebar-section-title:after, h4.sidebar-section-title:before, .answer-divider {
+                background: -moz-linear-gradient(left, {color:Post Background Color} 5%, {color:Single Post Page Accent Color} 20%, {color:Single Post Page Accent Color} 80%, {color:Post Background Color} 95%);
+                background: -webkit-linear-gradient(left, {color:Post Background Color} 5%,{color:Single Post Page Accent Color} 20%,{color:Single Post Page Accent Color} 80%,{color:Post Background Color} 95%);
+                background: linear-gradient(to right, {color:Post Background Color} 5%,{color:Single Post Page Accent Color} 20%,{color:Single Post Page Accent Color} 80%,{color:Post Background Color} 95%);
+            }
+            /* permalink post/sidebar divider */
+            .perma-right-sidebar {
+                border-left: 2px solid {color:Single Post Page Accent Color};
+            }
+
+            /* index pagination */
+            #load-more a, .back-to-top {
+                color: {color:Load More Button Color}
+            }
+            #load-more a, .back-to-top {
+                background-color: {color:Load More Button Background Color};
+                padding: 10px 20px;
+            }
+            
+            /* sidebar */
+            #offCanvas .mast-title, #offCanvas p, #offCanvas .menu-items li a, .menu-follow, .menu-follow:focus, .menu-follow:hover,
+            #offCanvas .menu-items li a:focus, #offCanvas .menu-items li a:hover, .side-social li a, .menu-items li a, .menu-items li a:focus, .menu-items li a:hover {
+                color: {color:Sidebar Text Color};
+            }
+            .menu-follow .item-slider, .menu-items li a .item-slider, .menu-divider {
+                background-color: {color:Sidebar Text Color}
+            }
+            #offCanvas .is-accordion-submenu-parent>a:after, #offCanvas .dropdown.menu>li.is-dropdown-submenu-parent>a:after {
+                    border-color: {color:Sidebar Text Color} transparent transparent
+            }
+            .sidebar-title, .sidebar-title:before {
+                background-color: {color:Sidebar Title Background Color}
+            }
+
+            #offCanvas .sidebar-title p, #offCanvas .sidebar-title a {
+                color: {color:Sidebar Title Text Color}
+            }
+            .side-follow a {
+                color: {color:Sidebar Follow Text Color};
+                background-color: {color:Sidebar Follow Button Color};
+                border: 2px solid {color:Sidebar Follow Button Color}
+            }
+            .side-social li {
+                border: 1px solid {color:Sidebar Text Color}
+            }
+            
+            /* Footer */
+            .blog-footer * {
+                color: {color:Footer Text Color}
+            }
+            .footer-avatar img {
+                border-color: {color:Footer Text Color};
+                background-color: {color:Footer Text Color};
+            }
+            
+            {block:IfNotForceFullWidthPhotoPosts}
+            .photo-wrapper img {
+                width: auto
+            }
+            {/block:IfNotForceFullWidthPhotoPosts}
+            {block:IfForceFullWidthTextPostImages}
+            .post.text figure img {
+                width: 100%
+            }
+            {/block:IfForceFullWidthTextPostImages}
+            
+            /* min-width 641px, medium screens */
+            @media only screen and (min-width: 40.063em) { 
+                {block:Posts}{block:Text}{block:Date}
+                .single-post.text .entry-content {
+                    width: auto
+                }
+                {/block:Date}{/block:Text}{/block:Posts}
+            }
+            
+            /* min-width 1025px, large screens */
+            @media only screen and (min-width: 64.063em) { 
+                /* header */
+                .mast-title {
+                    font-size: {text:Title Font Size};
+                    line-height: calc({text:Title Font Size} + .4rem);
+                }
+                
+                /* buttons */
+                .visit-link a:hover h5, .visit-link a:hover p {
+                    color: {color:Link Post Button Background Color}
+                }
+                
+                .side-follow a:hover {
+                    color: {color:Sidebar Follow Button Color}
+                }
+                
+                /* social link hovers */
+                .footer-social li, .footer-social li a, .side-social li, .side-social li a {
+                    transition: all .25s ease-in-out
+                }
+                .side-social li:hover {
+                    background-color: {color:Sidebar Text Color}
+                }
+            }
+            
+            {block:SearchPage}
+            .top-bar {
+                background: {color:Top Bar Background Color}
+            }
+            {/block:SearchPage}
+            
+            {block:TagPage}
+            .top-bar {
+                background: {color:Top Bar Background Color}
+            }
+            {/block:TagPage}
+            
+            /* index page specific */
+            {block:IndexPage}{block:ShowHeaderImage} 
+            .bg-cover {
+                background-image: url("{HeaderImage}")
+            }
+            {/block:ShowHeaderImage}{/block:IndexPage}
+            
+            /* permalink page */
+            {block:PermalinkPage}
+            .side-bar {
+                padding-top: 10%
+            }
+            .top-bar {
+                background: {color:Top Bar Background Color}
+            }
+            .bg-cover {
+                background-color: {color:Permalink Page Background Color};
+            }
+            {block:ShowHeaderImage}
+            .blog-footer, .main-perma, .instagram-wrapper {
+                z-index: 2;
+                position: relative;
+            }
+            {/block:ShowHeaderImage}
+            {/block:PermalinkPage}
+            
+            {CustomCSS}
+            
+            </style>
+
+            {block:IfGoogleAnalyticsCode}
+            {text:Google Analytics Code}
+            {/block:IfGoogleAnalyticsCode}
+        
+    </head>
+    
+    <body class="{select:Columns}">        
+        {block:IfNotHideFacebookComments}<div id="fb-root"></div><script src="//connect.facebook.net/en_US/all.js#xfbml=1&appId=372884536131543"></script>{/block:IfNotHideFacebookComments}
+        
+        <!-- off canvas wrap start -->    
+        <div class="off-canvas-wrap">                
+            <div class="top-bar grid-x large-12 hide-for-large">
+                <div class="cell small-6 large-1">
+                    <!-- off canvas button -->
+                    <a class="left-off-canvas-toggle no-op">
+                        <button type="button" class="hollow button lines-button x2" data-toggle="offCanvas">
+                            <span class="lines"></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- off canvas menu -->
+            <aside id="offCanvas" class="off-canvas position-left hide-for-large" data-off-canvas>
+                <div class="menu-content">
+                    <div class="off-canvas-bg"></div>
+                    {block:IfNotHideHeaderAvatar}<a class="header-avatar" href="{BlogURL}"><img class="{AvatarShape}" src="{PortraitURL-128}" /></a>{/block:IfNotHideHeaderAvatar}
+                    {block:ShowTitle}<h1 class="mast-title">{Title}</h1>{/block:ShowTitle}
+                    <div class="description-wrapper">
+                        {block:ShowDescription}<p class="mast-description">{Description}</p>{/block:ShowDescription}
+                    </div>
+                    {block:IfNotHideSocialLinksSection}
+                    <ul class="side-social no-bullet">
+                        {block:IfNotHideRSS}
+                            <li><a class="no-op" href="{RSS}"><i class="fa fa-rss"></i></a></li>
+                        {/block:IfNotHideRSS}
+                        {block:IfFacebookURL}
+                            <li><a class="no-op" href="{text:Facebook URL}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        {/block:IfFacebookURL}
+                        {block:IfTwitterURL}
+                            <li><a class="no-op" href="{text:Twitter URL}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        {/block:IfTwitterURL}
+                        {block:IfGooglePlusURL}
+                            <li><a class="no-op" href="{text:Google Plus URL}" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                        {/block:IfGooglePlusURL}
+                        {block:IfInstagramURL}
+                            <li><a class="no-op" href="{text:Instagram URL}" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        {/block:IfInstagramURL}
+                        {block:IfVKURL}
+                            <li><a class="no-op" href="{text:VK URL}" target="_blank"><i class="fa fa-vk"></i></a></li>
+                        {/block:IfVKURL}
+                        {block:IfYoutubeURL}
+                            <li><a class="no-op" href="{text:Youtube URL}" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                        {/block:IfYoutubeURL}
+                        {block:IfVineURL}
+                            <li><a class="no-op" href="{text:Vine URL}" target="_blank"><i class="fa fa-vine"></i></a></li>
+                        {/block:IfVineURL}
+                        {block:IfPinterestURL}
+                            <li><a class="no-op" href="{text:Pinterest URL}" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
+                        {/block:IfPinterestURL}
+                        {block:IfVimeoURL}
+                            <li><a class="no-op" href="{text:Vimeo URL}" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>
+                        {/block:IfVimeoURL}
+                        {block:IfFlickrURL}
+                            <li><a class="no-op" href="{text:Flickr URL}" target="_blank"><i class="fa fa-flickr"></i></a></li>
+                        {/block:IfFlickrURL}
+                        {block:IfDribbleURL}
+                            <li><a class="no-op" href="{text:Dribbble URL}" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                        {/block:IfDribbleURL}
+                        {block:IfDeviantArtURL}
+                            <li><a class="no-op" href="{text:DeviantArt URL}" target="_blank"><i class="fa fa-deviantart"></i></a></li>
+                        {/block:IfDeviantArtURL}
+                        {block:IfSoundcloudURL}
+                            <li><a class="no-op" href="{text:SoundCloud URL}" target="_blank"><i class="fa fa-soundcloud"></i></a></li>
+                        {/block:IfSoundCloudURL}
+                        {block:IfSpotifyURL}
+                            <li><a class="no-op" href="{text:Spotify URL}" target="_blank"><i class="fa fa-spotify"></i></a></li>
+                        {/block:IfSpotifyURL}
+                        {block:IfStumbleuponURL}
+                            <li><a class="no-op" href="{text:StumbleUpon URL}" target="_blank"><i class="fa fa-stumbleupon"></i></a></li>
+                        {/block:IfStumbleuponURL}
+                        {block:IfBehanceURL}
+                            <li><a class="no-op" href="{text:Behance URL}" target="_blank"><i class="fa fa-behance"></i></a></li>
+                        {/block:IfBehanceURL}
+                        {block:IfLinkedinURL}
+                            <li><a class="no-op" href="{text:Linkedin URL}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        {/block:IfLinkedinURL}
+                    </ul>
+                    {/block:IfNotHideSocialLinksSection}
+                    <nav class="menu-nav">
+                        <ul class="menu-items vertical menu accordion-menu no-bullet" data-accordion-menu data-submenu-toggle="true">
+                            <li>
+                                <a href="#">Menu</a>
+                                <ul class="menu vertical nested">
+                                    {block:IfMenuHomeLabel}
+                                    <li><a href="{BlogURL}">{text:Menu Home Label}</a></li>
+                                    {/block:IfMenuHomeLabel}
+                                    
+                                    {block:IfNotHidePagesInMenu}{block:HasPages}
+                                    <li>
+                                        <a class="no-op">{text:Menu Pages Label}</a>
+                                        <ul class="menu vertical nested">
+                                            {block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
+                                        </ul>
+                                    </li>
+                                    {/block:HasPages}{/block:IfNotHidePagesInMenu}
+                                    
+                                    {block:IfNotHideTagsInMenu}
+                                    <li>
+                                        <a class="no-op">{text:Menu Tags Label}</a>
+                                        <ul class="menu vertical nested">
+                                            {block:IfMenuTag1}<li><a href="/tagged/{text:Menu Tag 1}">#{text:Menu Tag 1}</a></li>{/block:IfMenuTag1}
+                                            {block:IfMenuTag2}<li><a href="/tagged/{text:Menu Tag 2}">#{text:Menu Tag 2}</a></li>{/block:IfMenuTag2}
+                                            {block:IfMenuTag3}<li><a href="/tagged/{text:Menu Tag 3}">#{text:Menu Tag 3}</a></li>{/block:IfMenuTag3}
+                                            {block:IfMenuTag4}<li><a href="/tagged/{text:Menu Tag 4}">#{text:Menu Tag 4}</a></li>{/block:IfMenuTag4}
+                                            {block:IfMenuTag5}<li><a href="/tagged/{text:Menu Tag 5}">#{text:Menu Tag 5}</a></li>{/block:IfMenuTag5}
+                                            {block:IfMenuTag6}<li><a href="/tagged/{text:Menu Tag 6}">#{text:Menu Tag 6}</a></li>{/block:IfMenuTag6}
+                                            {block:IfMenuTag7}<li><a href="/tagged/{text:Menu Tag 7}">#{text:Menu Tag 7}</a></li>{/block:IfMenuTag7}
+                                            {block:IfMenuTag8}<li><a href="/tagged/{text:Menu Tag 8}">#{text:Menu Tag 8}</a></li>{/block:IfMenuTag8}
+                                        </ul>
+                                    </li>
+                                    {/block:IfNotHideTagsInMenu}
+                                    
+                                    {block:IfMenuAskLabel}
+                                    <li><a href="/ask"></i>{text:Menu Ask Label}</a></li>
+                                    {/block:IfMenuAskLabel}
+                            
+                                    {block:IfMenuSubmitPostLabel}
+                                    <li><a href="/submit">{text:Menu Submit Post Label}</a></li>
+                                    {/block:IfMenuSubmitPostLabel}
+                            
+                                    {block:IfMenuArchiveLabel}
+                                    <li><a href="/archive">{text:Menu Archive Label}</a></li>
+                                    {/block:IfMenuArchiveLabel}
+                            
+                                    {block:IfMenuSendEmailLabel}
+                                    <li><a href="mailto:{text:Menu Send Email Address}">{text:Menu Send Email Label}</a></li>
+                                    {/block:IfMenuSendEmailLabel}
+                                </ul>
+                            </li>
+                            {block:IfNotHideMenuSearch}
+                            <!-- <li><a href="#" data-open="searchModal"><i class="fa fa-search"></i></a></li> -->
+                            <li>
+                                <form action="/search" method="get" class="nav-search" name="searchform">
+                                    <i class="fa fa-search"></i>
+                                    <input type="text" name="q" value="{SearchQuery}" id="search-input" placeholder="Search..."/>
+                                </form>
+                            </li>
+                            {/block:IfNotHideMenuSearch}
+                        </ul>
+                    </nav>
+                </div>
+                
+                {block:IfNotHideAboutMeSection}
+                <div class="menu-item">
+                    <div class="sidebar-title">
+                        <p>{text:Sidebar About Me Title}</p>
+                    </div>
+                    
+                    {block:IfNotAboutMeImageImage}<img class="about-avatar {select:Menu Avatar Shape}" src="{PortraitURL-128}" alt="blog avatar">{/block:IfNotAboutMeImageImage}
+                    {block:IfAboutMeImageImage}<img class="about-img" src="{image:About Me Image}" />{/block:IfAboutMeImageImage}
+                    
+                    <div class="about-content"><p class="about-title"><b>{text:Sidebar About Me Content Heading}</b></p><p>{text:Sidebar About Me Content}</p></div>
+                </div>
+                {/block:IfNotHideAboutMeSection}
+                {block:IfNotHideFollowMeSection}
+                <div class="menu-item">
+                    <div class="sidebar-title"><p>{text:Sidebar Follow Title}</p></div>
+                    <h6 class="side-follow"><a class="no-op" href="//www.tumblr.com/follow/{Name}" target="_blank">{lang:Follow me}</a></h6>
+                </div>
+                {/block:IfNotHideFollowMeSection}
+                {block:IfSidebarBannerCode}
+                <div class="menu-item banner">
+                    <div class="banner-wrapper">
+                        {text:Sidebar Banner Code}
+                    </div>
+                </div>
+                {/block:IfSidebarBannerCode}
+                {block:IfTwitterFeedEmbedCode}
+                    <div class="menu-item">
+                        <div class="twitter-wrapper">
+                            <div class="sidebar-title">
+                                <p><i class="fa fa-twitter"></i>{text:Twitter Feed Title}</p>
+                            </div>
+                            {text:Twitter Feed Embed Code}
+                        </div>
+                    </div>
+                {/block:IfTwitterFeedEmbedCode}
+                {block:IfFacebookFeedPageURL}
+                    <div class="menu-item">
+                        <div class="facebook-wrapper">
+                            <div class="sidebar-title">
+                                <p><i class="fa fa-facebook"></i>{text:Facebook Feed Title}</p>
+                            </div>
+                            <script>(function(d, s, id) {
+                              var js, fjs = d.getElementsByTagName(s)[0];
+                              if (d.getElementById(id)) return;
+                              js = d.createElement(s); js.id = id;
+                              js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=133284720335915";
+                              fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));</script>
+
+                            <div id="fb_container" style="width:100%;">
+                                <div class="fb-page" data-href="{text:Facebook Feed Page URL}/" data-tabs="timeline, messages, events" data-width="240px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="{text:Facebook Feed Page URL}/"><a href="{text:Facebook Feed Page URL}/">{text:Facebook Feed Title}</a></blockquote></div></div>
+                            </div>
+                        </div>
+                    </div>
+                {/block:IfFacebookFeedPageURL}
+                {block:IfPinterestBoardURL}
+                    <div class="menu-item">
+                        <div class="pinterest-wrapper">
+                            <div class="sidebar-title">
+                                <p><i class="fa fa-pinterest"></i>{text:Pinterest Feed Title}</p>
+                            </div>
+                            <a data-pin-do="embedUser" data-pin-board-width="220" data-pin-scale-height="400" data-pin-scale-width="80" href="{text:Pinterest Board URL}"></a>
+                        </div>
+                    </div>
+                {/block:IfPinterestBoardURL}
+                {block:IfNotHideRecentLikesFeed}{block:Likes} 
+                    <div class="menu-item">
+                        <div class="likes-wrapper">
+                            <div class="sidebar-title">
+                                <p><i class="fa fa-heart"></i>{text:Sidebar Recent Likes Title}</p>
+                            </div>
+                            {Likes limit="5" summarize="100"}
+                        </div>
+                    </div>
+                {/block:Likes}{/block:IfNotHideRecentLikesFeed}
+            </aside>
+            <!-- end off canvas nav content -->
+    
+    
+            <!-- start main content -->
+            {block:IndexPage}
+            <main class="main off-canvas-content grid-x" data-off-canvas-content>
+            {/block:IndexPage}
+
+            {block:PermalinkPage}
+            <main class="main-perma off-canvas-content grid-x" data-off-canvas-content>
+            {/block:PermalinkPage}
+                
+                <!-- start header -->
+                <header id="masthead" class="large-3 cell{block:PermalinkPage} show-for-large{/block:PermalinkPage}">
+                    <div class="mast-container">
+                        <div class="mast-wrapper">
+                            <div class="mast-box">
+                                {block:IfNotHideHeaderAvatar}<a class="header-avatar hide-for-large" href="{BlogURL}"><img class="{AvatarShape}" src="{PortraitURL-128}" /></a>{/block:IfNotHideHeaderAvatar}
+                                {block:ShowTitle}<h1 class="mast-title">{Title}</h1>{/block:ShowTitle}
+                                
+                                {block:IndexPage}
+                                <div class="description-wrapper">
+                                    {block:ShowDescription}<p class="mast-description">{Description}</p>{/block:ShowDescription}
+                                </div>
+                                {/block:IndexPage}
+                                
+                                <div class="show-for-large">
+                                    {block:IfNotHideSocialLinksSection}
+                                    <ul class="header-social no-bullet">
+                                        {block:IfNotHideRSS}
+                                            <li><a href="{RSS}"><i class="fa fa-rss"></i></a></li>
+                                        {/block:IfNotHideRSS}
+                                        {block:IfFacebookURL}
+                                            <li><a href="{text:Facebook URL}" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                        {/block:IfFacebookURL}
+                                        {block:IfTwitterURL}
+                                            <li><a href="{text:Twitter URL}" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                        {/block:IfTwitterURL}
+                                        {block:IfGooglePlusURL}
+                                            <li><a href="{text:Google Plus URL}" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                        {/block:IfGooglePlusURL}
+                                        {block:IfInstagramURL}
+                                            <li><a href="{text:Instagram URL}" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                        {/block:IfInstagramURL}
+                                        {block:IfVKURL}
+                                            <li><a href="{text:VK URL}" target="_blank"><i class="fa fa-vk"></i></a></li>
+                                        {/block:IfVKURL}
+                                        {block:IfYoutubeURL}
+                                            <li><a href="{text:Youtube URL}" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                                        {/block:IfYoutubeURL}
+                                        {block:IfVineURL}
+                                            <li><a href="{text:Vine URL}" target="_blank"><i class="fa fa-vine"></i></a></li>
+                                        {/block:IfVineURL}
+                                        {block:IfPinterestURL}
+                                            <li><a href="{text:Pinterest URL}" target="_blank"><i class="fa fa-pinterest-p"></i></a></li>
+                                        {/block:IfPinterestURL}
+                                        {block:IfVimeoURL}
+                                            <li><a href="{text:Vimeo URL}" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>
+                                        {/block:IfVimeoURL}
+                                        {block:IfFlickrURL}
+                                            <li><a href="{text:Flickr URL}" target="_blank"><i class="fa fa-flickr"></i></a></li>
+                                        {/block:IfFlickrURL}
+                                        {block:IfDribbleURL}
+                                            <li><a href="{text:Dribbble URL}" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                                        {/block:IfDribbleURL}
+                                        {block:IfDeviantArtURL}
+                                            <li><a href="{text:DeviantArt URL}" target="_blank"><i class="fa fa-deviantart"></i></a></li>
+                                        {/block:IfDeviantArtURL}
+                                        {block:IfSoundcloudURL}
+                                            <li><a href="{text:SoundCloud URL}" target="_blank"><i class="fa fa-soundcloud"></i></a></li>
+                                        {/block:IfSoundCloudURL}
+                                        {block:IfSpotifyURL}
+                                            <li><a href="{text:Spotify URL}" target="_blank"><i class="fa fa-spotify"></i></a></li>
+                                        {/block:IfSpotifyURL}
+                                        {block:IfStumbleuponURL}
+                                            <li><a href="{text:StumbleUpon URL}" target="_blank"><i class="fa fa-stumbleupon"></i></a></li>
+                                        {/block:IfStumbleuponURL}
+                                        {block:IfBehanceURL}
+                                            <li><a href="{text:Behance URL}" target="_blank"><i class="fa fa-behance"></i></a></li>
+                                        {/block:IfBehanceURL}
+                                        {block:IfLinkedinURL}
+                                            <li><a href="{text:Linkedin URL}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                        {/block:IfLinkedinURL}
+                                    </ul>
+                                    {/block:IfNotHideSocialLinksSection}
+
+                                    <nav class="menu-nav">
+                                        <ul class="menu-items vertical menu accordion-menu no-bullet" data-accordion-menu data-submenu-toggle="true">
+                                            <li>
+                                                <a href="#">Menu</a>
+                                                <ul class="menu vertical nested">
+                                                    {block:IfMenuHomeLabel}
+                                                    <li><a href="{BlogURL}">{text:Menu Home Label}</a></li>
+                                                    {/block:IfMenuHomeLabel}
+                                                    
+                                                    {block:IfNotHidePagesInMenu}{block:HasPages}
+                                                    <li>
+                                                        <a class="no-op">{text:Menu Pages Label}</a>
+                                                        <ul class="menu vertical nested">
+                                                            {block:Pages}<li><a href="{URL}">{Label}</a></li>{/block:Pages}
+                                                        </ul>
+                                                    </li>
+                                                    {/block:HasPages}{/block:IfNotHidePagesInMenu}
+                                                    
+                                                    {block:IfNotHideTagsInMenu}
+                                                    <li>
+                                                        <a class="no-op">{text:Menu Tags Label}</a>
+                                                        <ul class="menu vertical nested">
+                                                            {block:IfMenuTag1}<li><a href="/tagged/{text:Menu Tag 1}">#{text:Menu Tag 1}</a></li>{/block:IfMenuTag1}
+                                                            {block:IfMenuTag2}<li><a href="/tagged/{text:Menu Tag 2}">#{text:Menu Tag 2}</a></li>{/block:IfMenuTag2}
+                                                            {block:IfMenuTag3}<li><a href="/tagged/{text:Menu Tag 3}">#{text:Menu Tag 3}</a></li>{/block:IfMenuTag3}
+                                                            {block:IfMenuTag4}<li><a href="/tagged/{text:Menu Tag 4}">#{text:Menu Tag 4}</a></li>{/block:IfMenuTag4}
+                                                            {block:IfMenuTag5}<li><a href="/tagged/{text:Menu Tag 5}">#{text:Menu Tag 5}</a></li>{/block:IfMenuTag5}
+                                                            {block:IfMenuTag6}<li><a href="/tagged/{text:Menu Tag 6}">#{text:Menu Tag 6}</a></li>{/block:IfMenuTag6}
+                                                            {block:IfMenuTag7}<li><a href="/tagged/{text:Menu Tag 7}">#{text:Menu Tag 7}</a></li>{/block:IfMenuTag7}
+                                                            {block:IfMenuTag8}<li><a href="/tagged/{text:Menu Tag 8}">#{text:Menu Tag 8}</a></li>{/block:IfMenuTag8}
+                                                        </ul>
+                                                    </li>
+                                                    {/block:IfNotHideTagsInMenu}
+                                                    
+                                                    {block:IfMenuAskLabel}
+                                                    <li><a href="/ask"></i>{text:Menu Ask Label}</a></li>
+                                                    {/block:IfMenuAskLabel}
+                                            
+                                                    {block:IfMenuSubmitPostLabel}
+                                                    <li><a href="/submit">{text:Menu Submit Post Label}</a></li>
+                                                    {/block:IfMenuSubmitPostLabel}
+                                            
+                                                    {block:IfMenuArchiveLabel}
+                                                    <li><a href="/archive">{text:Menu Archive Label}</a></li>
+                                                    {/block:IfMenuArchiveLabel}
+                                            
+                                                    {block:IfMenuSendEmailLabel}
+                                                    <li><a href="mailto:{text:Menu Send Email Address}">{text:Menu Send Email Label}</a></li>
+                                                    {/block:IfMenuSendEmailLabel}
+                                                </ul>
+                                            </li>
+                                            {block:IfNotHideMenuSearch}
+                                            <li>
+                                                <form action="/search" method="get" class="nav-search" name="searchform">
+                                                    <i class="fa fa-search"></i>
+                                                    <input type="text" name="q" value="{SearchQuery}" id="search-input" placeholder="Search..."/>
+                                                </form>
+                                            </li>
+                                            {/block:IfNotHideMenuSearch}
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="show-for-large">
+                            {block:IfNotHideAboutMeSection}
+                            <div class="menu-item">
+                                <div class="sidebar-title">
+                                    <p>{text:Sidebar About Me Title}</p>
+                                </div>
+                                
+                                {block:IfNotAboutMeImageImage}<img class="about-avatar {select:Menu Avatar Shape}" src="{PortraitURL-128}" alt="blog avatar">{/block:IfNotAboutMeImageImage}
+                                {block:IfAboutMeImageImage}<img class="about-img" src="{image:About Me Image}" />{/block:IfAboutMeImageImage}
+                                
+                                <div class="about-content"><p class="about-title"><b>{text:Sidebar About Me Content Heading}</b></p><p>{text:Sidebar About Me Content}</p></div>
+                            </div>
+                            {/block:IfNotHideAboutMeSection}
+                            {block:IfNotHideFollowMeSection}
+                            <div class="menu-item">
+                                <div class="sidebar-title"><p>{text:Sidebar Follow Title}</p></div>
+                                <h6 class="side-follow"><a class="no-op" href="//www.tumblr.com/follow/{Name}" target="_blank">{lang:Follow me}</a></h6>
+                            </div>
+                            {/block:IfNotHideFollowMeSection}
+
+                            {block:IndexPage}
+                                {block:IfSidebarBannerCode}
+                                <div class="menu-item banner">
+                                    <div class="banner-wrapper">
+                                        {text:Sidebar Banner Code}
+                                    </div>
+                                </div>
+                                {/block:IfSidebarBannerCode}
+                                {block:IfTwitterFeedEmbedCode}
+                                    <div class="menu-item">
+                                        <div class="twitter-wrapper">
+                                            <div class="sidebar-title">
+                                                <p><i class="fa fa-twitter"></i>{text:Twitter Feed Title}</p>
+                                            </div>
+                                            {text:Twitter Feed Embed Code}
+                                        </div>
+                                    </div>
+                                {/block:IfTwitterFeedEmbedCode}
+                                {block:IfFacebookFeedPageURL}
+                                    <div class="menu-item">
+                                        <div class="facebook-wrapper">
+                                            <div class="sidebar-title">
+                                                <p><i class="fa fa-facebook"></i>{text:Facebook Feed Title}</p>
+                                            </div>
+                                            <script>(function(d, s, id) {
+                                              var js, fjs = d.getElementsByTagName(s)[0];
+                                              if (d.getElementById(id)) return;
+                                              js = d.createElement(s); js.id = id;
+                                              js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=133284720335915";
+                                              fjs.parentNode.insertBefore(js, fjs);
+                                            }(document, 'script', 'facebook-jssdk'));</script>
+                                            
+                                            <div id="fb_container" style="width:100%;">
+                                                <div class="fb-page" data-href="{text:Facebook Feed Page URL}/" data-tabs="timeline, messages, events" data-width="240px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="{text:Facebook Feed Page URL}/"><a href="{text:Facebook Feed Page URL}/">{text:Facebook Feed Title}</a></blockquote></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {/block:IfFacebookFeedPageURL}
+                                {block:IfPinterestBoardURL}
+                                    <div class="menu-item">
+                                        <div class="pinterest-wrapper">
+                                            <div class="sidebar-title">
+                                                <p><i class="fa fa-pinterest"></i>{text:Pinterest Feed Title}</p>
+                                            </div>
+                                            <a data-pin-do="embedUser" data-pin-board-width="220" data-pin-scale-height="400" data-pin-scale-width="80" href="{text:Pinterest Board URL}"></a>
+                                        </div>
+                                    </div>
+                                {/block:IfPinterestBoardURL}
+                                {block:IfNotHideRecentLikesFeed}{block:Likes} 
+                                    <div class="menu-item">
+                                        <div class="likes-wrapper">
+                                            <div class="sidebar-title">
+                                                <p><i class="fa fa-heart"></i>{text:Sidebar Recent Likes Title}</p>
+                                            </div>
+                                            {Likes limit="5" summarize="100"}
+                                        </div>
+                                    </div>
+                                {/block:Likes}{/block:IfNotHideRecentLikesFeed}
+                            {/block:IndexPage}
+                        </div>
+                    </div>
+                </header> 
+                <!-- end header -->
+
+                <!-- tag and search page -->
+                <!-- {block:TagPage}
+                    <div id="results-wrapper">
+                        <h4>{lang:Posts tagged Tag 2}</h4>
+                    </div>
+                {/block:TagPage}
+                {block:SearchPage}
+                    <div id="results-wrapper">
+                        <h4>{lang:Search results for SearchQuery 2} <small>{lang:SearchResultCount results}</small></h4>
+                        {block:NoSearchResults}
+                            <h2>{lang:No posts containing SearchQuery 2}</h2>
+                        {/block:NoSearchResults}
+                    </div>
+                {/block:SearchPage} -->
+                
+                <!-- start index page -->
+                {block:IndexPage}
+
+                    <!-- start index page posts -->
+                    <section class="content-area large-9 cell">
+                        <div class="bg-tint">
+                            {block:ShowHeaderImage}<div class="bg-cover"></div>{/block:ShowHeaderImage} 
+                        </div>                    
+                        
+                        <div class="gutter-sizer"></div>
+
+                        {block:Posts}
+                            <article class="post {PostType}" id="{PostID}">
+                                <div class="ani-div">
+                                    {block:Photo}                                    
+                                        <div class="post-media photo">
+                                            <div class="lightbox">
+                                                <div class="photo-wrapper ani-div">
+                                                    <a href="{PhotoURL-HighRes}" style="background-image: url({PhotoURL-HighRes})"><img id="photo_{PostID}" src="{PhotoURL-HighRes}" alt="{PhotoAlt}" data-interchange="[{PhotoURL-500}, (default)], [{PhotoURL-HighRes}, (medium)]" /></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="post-share small-12 cell align-self-bottom">
+                                            <div class="see-post">
+                                                <a class="no-op" href="{Permalink}" title="{lang:Permalink for this post}"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                            <div class="more-share no-op">
+                                                <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                            </div>
+                                            <div class="reblog-button">
+                                                {ReblogButton size="14" color="black"}
+                                            </div>
+                                            <div class="like-button no-op">
+                                                {LikeButton size="14" color="black"}
+                                            </div>
+                                        </div>
+                                    {/block:Photo}
+
+                                    {block:Photoset}                                    
+                                        <div class="post-media photoset">
+                                            {Photoset}
+                                        </div>
+                                                                        
+                                        <div class="post-share small-12 cell align-self-bottom">
+                                            <div class="see-post">
+                                                <a class="no-op" href="{Permalink}" title="{lang:Permalink for this post}"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                            <div class="more-share no-op">
+                                                <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                            </div>
+                                            <div class="reblog-button">
+                                                {ReblogButton size="14" color="black"}
+                                            </div>
+                                            <div class="like-button no-op">
+                                                {LikeButton size="14" color="black"}
+                                            </div>
+                                        </div>
+                                    {/block:Photoset}
+
+                                    {block:Panorama}
+                                        <div class="photo-wrapper ani-div">
+                                            {LinkOpenTag}<img id="photo_{PostID}" src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />{LinkCloseTag}
+                                        </div>
+                                    
+                                        <div class="post-share small-12 cell align-self-bottom">
+                                            <div class="see-post">
+                                                <a class="no-op" href="{Permalink}" title="{lang:Permalink for this post}"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                            <div class="more-share no-op">
+                                                <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                            </div>
+                                            <div class="reblog-button">
+                                                {ReblogButton size="14" color="black"}
+                                            </div>
+                                            <div class="like-button no-op">
+                                                {LikeButton size="14" color="black"}
+                                            </div>
+                                        </div>
+                                    {/block:Panorama}
+
+                                    {block:Video}
+                                        <div class="post-media video ani-div">
+                                            {VideoEmbed-700}
+                                        </div>
+                                    
+                                        <div class="post-share small-12 cell align-self-bottom">
+                                            <div class="see-post">
+                                                <a class="no-op" href="{Permalink}" title="{lang:Permalink for this post}"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                            <div class="more-share no-op">
+                                                <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                            </div>
+                                            <div class="reblog-button">
+                                                {ReblogButton size="14" color="black"}
+                                            </div>
+                                            <div class="like-button no-op">
+                                                {LikeButton size="14" color="black"}
+                                            </div>
+                                        </div>
+                                    {/block:Video}
+
+                                    {block:Audio}
+                                        <div class="post-media audio ani-div">
+                                            {block:AudioEmbed}{AudioEmbed-250}{/block:AudioEmbed}
+                                        </div>
+                                        
+                                        <div class="post-share small-12 cell align-self-bottom">
+                                            <div class="see-post">
+                                                <a class="no-op" href="{Permalink}" title="{lang:Permalink for this post}"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                            <div class="more-share no-op">
+                                                <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                            </div>
+                                            <div class="reblog-button">
+                                                {ReblogButton size="14" color="black"}
+                                            </div>
+                                            <div class="like-button no-op">
+                                                {LikeButton size="14" color="black"}
+                                            </div>
+                                        </div>
+                                    {/block:Audio}
+
+                                    {block:Text}
+                                        {block:Title}
+                                        <div class="title-container">
+                                            <h2><a class="title-link" href="{Permalink}" title="{lang:Post permalink}">{Title}</a></h2>
+                                        </div>
+                                        {/block:Title}
+                                        
+                                        <div class="post-entry">
+                                            <div class="entry-content ani-div">           
+                                                {Body}
+                                                
+                                                {block:ContentSource}
+                                                    <p class="content-source">(Source: <a href="{SourceURL}" title="{SourceTitle}">{SourceTitle}</a>)</p>
+                                                {/block:ContentSource}
+                                                
+                                                {block:More}<p class="rm-break"><a href="{Permalink}">{lang:Read more}</a></p>{/block:More}
+                                            </div> 
+                                        </div>
+
+                                        <div class="post-share small-12 cell align-self-bottom">
+                                            <div class="see-post">
+                                                <a class="no-op" href="{Permalink}" title="{lang:Permalink for this post}"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                            <div class="more-share no-op">
+                                                <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                            </div>
+                                            <div class="reblog-button">
+                                                {ReblogButton size="14" color="black"}
+                                            </div>
+                                            <div class="like-button no-op">
+                                                {LikeButton size="14" color="black"}
+                                            </div>
+                                        </div>
+                                    {/block:Text}
+
+                                    {block:Link}
+                                        <div class="post-entry">
+                                            <div class="entry-content ani-div">
+                                                
+                                                <h2><a class="title-link" href="{Permalink}" title="{lang:Post permalink}">{Name}</a></h2>
+                                                
+                                                {block:Excerpt}<p class="excerpt"><em>{Excerpt}</em></p>{/block:Excerpt}
+
+                                                <div class="visit-link">
+                                                    <a class="no-op" href="{URL}" target="_blank" title="{lang:Link}"></a>
+                                                    <h5>{Description}</h5>
+                                                    <p class="host">{Host}</p>
+                                                </div>
+                                            </div> 
+                                        </div>
+
+                                        <div class="post-share small-12 cell align-self-bottom">
+                                            <div class="see-post">
+                                                <a class="no-op" href="{Permalink}" title="{lang:Permalink for this post}"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                            <div class="more-share no-op">
+                                                <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                            </div>
+                                            <div class="reblog-button">
+                                                {ReblogButton size="14" color="black"}
+                                            </div>
+                                            <div class="like-button no-op">
+                                                {LikeButton size="14" color="black"}
+                                            </div>
+                                        </div>
+                                    {/block:Link}
+
+                                    {block:Quote}
+                                        <div class="post-entry">
+                                            <div class="entry-content ani-div">                 
+                                                <h2><blockquote><a class="title-link" href="{Permalink}" title="{lang:Permalink for this post}">"{Quote}"</a></blockquote></h2>
+                                                {block:Source}<p><cite>{Source}</cite></p>{/block:Source}
+                                            </div> 
+                                        </div>
+
+                                        <div class="post-share small-12 cell align-self-bottom">
+                                            <div class="see-post">
+                                                <a class="no-op" href="{Permalink}" title="{lang:Permalink for this post}"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                            <div class="more-share no-op">
+                                                <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                            </div>
+                                            <div class="reblog-button">
+                                                {ReblogButton size="14" color="black"}
+                                            </div>
+                                            <div class="like-button no-op">
+                                                {LikeButton size="14" color="black"}
+                                            </div>
+                                        </div>
+                                    {/block:Quote}
+
+                                    {block:Chat}
+                                        <div class="white-pad">
+                                            <div class="post-entry">
+                                                <div class="entry-content ani-div">                 
+                                                    <div class="chat-wrapper grid-x">
+                                                        {block:Title}<span class="small-12 cell align-self-middle"><h2><a class="title-link" href="{Permalink}">{Title}</a></h2></span>{/block:Title}
+                                                        <ul class="post-chat no-bullet small-12 cell">
+                                                            {block:Lines}{block:Label}
+                                                            <li class="{Alt}"><span><p><b>{Label}</b> {Line}</p></span></li>
+                                                            {/block:Label}{/block:Lines}
+                                                        </ul>
+                                                    </div>
+                                                </div> 
+                                            </div>
+                                        </div>
+
+                                        <div class="post-share small-12 cell align-self-bottom">
+                                            <div class="see-post">
+                                                <a class="no-op" href="{Permalink}" title="{lang:Permalink for this post}"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                            <div class="more-share no-op">
+                                                <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                            </div>
+                                            <div class="reblog-button">
+                                                {ReblogButton size="14" color="black"}
+                                            </div>
+                                            <div class="like-button no-op">
+                                                {LikeButton size="14" color="black"}
+                                            </div>
+                                        </div>
+                                    {/block:Chat}
+
+                                    {block:Answer}
+                                        <div class="white-pad">
+                                            <div class="post-entry">
+                                                <div class="entry-content grid-x">
+                                                    <div class="post-asker ani-div cell small-12">
+                                                        <img class="asker-avatar {AvatarShape}" src="{AskerPortraitURL-96}" alt="Asker Avatar" /><h2>{Asker} asked:</h2>
+                                                        <p>{Question}</p>
+                                                    </div>
+                                                    {block:Answerer}
+                                                    <div class="post-answer ani-div cell small-12">
+                                                            <img class="answer-avatar {AvatarShape}" src="{AnswererPortraitURL-96}" alt="Answerer Avatar"><h2>{Answerer} answered:</h2>
+                                                            {Answer}
+                                                    </div>
+                                                    {/block:Answerer}
+                                                    <div class="replies cell small-12">
+                                                        {Replies}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="post-share small-12 cell align-self-bottom">
+                                            <div class="see-post">
+                                                <a class="no-op" href="{Permalink}" title="{lang:Permalink for this post}"><i class="fa fa-eye"></i></a>
+                                            </div>
+                                            <div class="more-share no-op">
+                                                <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                            </div>
+                                            <div class="reblog-button">
+                                                {ReblogButton size="14" color="black"}
+                                            </div>
+                                            <div class="like-button no-op">
+                                                {LikeButton size="14" color="black"}
+                                            </div>
+                                        </div>
+                                    {/block:Answer}
+
+                                    <div id="shareModal-{PostID}" class="share reveal full" data-reveal>
+                                        <ul class="more-share-container no-bullet">
+                                            <h1>{lang:Share this}:</h1>
+                                            <li><a href="//www.facebook.com/share.php?u={ShortURL}" title="{lang:Share this} Facebook" target="_blank"><img src="//static.tumblr.com/cmghtlm/PYPnmku6n/facebook.png" /></a></li>
+                                            <li><a href="//twitter.com/intent/tweet?url={ShortURL}" title="{lang:Tweet this}" target="_blank"><img src="//static.tumblr.com/cmghtlm/GOSnmku9n/twitter.png" /></a></li>
+                                            <li><a href="//plus.google.com/share?url={ShortURL}" title="{lang:Share this} Google+" target="_blank"><img src="//static.tumblr.com/cmghtlm/9j6nmku75/g_.png" /></a></li>
+                                            <li><a href="//www.pinterest.com/pin/create/button/?url={ShortURL}" title="{lang:Share this} Pinterest" target="_blank"><img src="//static.tumblr.com/cmghtlm/Ygdnmku7l/pinterest.png" /></a></li>
+                                        </ul>
+                                        <a class="close-modal-button" data-close><span class="cross-ico"></span></a>
+                                    </div>
+                                </div>   
+                            </article>
+                        {/block:Posts}
+                    </section>
+                    <!-- end posts -->
+
+                    <div class="page-load-status" style="display: none;">
+                        <div id="infscr-loading" class="infinite-scroll-request">
+                            <img src="//static.tumblr.com/cmghtlm/Rz0noy7fh/theee-dots-black.svg" alt="Loading" />
+                        </div>
+                    </div>
+
+                    <!-- start pagination -->
+                    {block:Pagination}
+                        <div class="pagi-container">
+                            <div id="load-more">
+                                {block:NextPage}<p><a class="no-op" href="{NextPage}">{lang:Load more posts}</a></p>{/block:NextPage}
+                            </div>
+                            <a class="back-to-top no-op" href='#'><i class="fa fa-angle-double-up"></i></a>
+                        </div>
+                    {/block:Pagination}
+                    <!-- end pagination -->
+
+                {/block:IndexPage} 
+                <!-- end index page -->
+
+
+                <!-- start permalink page -->
+                {block:PermalinkPage}
+                
+                    <section class="permalink-content-area large-8 cell">
+
+                    {block:Posts}
+                        <article class="post-single {PostType}">
+
+                        {block:Photo}
+                            <div class="post-media-content">
+
+                                <div class="lightbox">
+                                    <div class="post-photo-wrap">
+                                        <a href="{PhotoURL-HighRes}">
+                                            <img id="photo_{PostID}" src="{PhotoURL-HighRes}" alt="{PhotoAlt}" data-interchange="[{PhotoURL-500}, (default)], [{PhotoURL-HighRes}, (medium)]" />
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div> 
+
+                            <div class="post-entry-container"> 
+                                <div class="post-entry-content">
+
+                                {block:Caption}
+                                    {Caption}
+                                {/block:Caption}
+
+                                    <!-- POST META CONTENT -->
+                                    <div class="meta-content-wrap">
+
+                                        <!-- POST COLOPHON / CREATED BY -->
+                                        <div class="colophon-wrap grid-x align-middle">
+                                        {block:NotReblog} 
+                                            <img class="{AvatarShape}" src="{PortraitURL-64}" />
+                                            <p>{lang:By PostAuthorName 2}<span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:NotReblog} 
+
+                                        {block:RebloggedFrom} 
+                                            <img class="{AvatarShape}" src="{ReblogParentPortraitURL-64}" />
+                                            <p>{lang:Via}<a href="{ReblogParentURL}">&nbsp;{ReblogParentName}</a><span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:RebloggedFrom} 
+                                        </div>
+                                        <!-- END OF POST COLOPHON -->
+
+                                    </div>
+                                    <!-- END POST META CONTENT -->
+
+                                    <!-- POST SHARING -->
+                                    <div class="post-distribution grid-x align-middle">
+
+                                    {block:NoteCount}
+                                        <p class="meta-note-count shrink cell align-self-middle"><i class="fa fa-pencil" aria-hidden="true"></i> {NoteCount}</p>
+                                    {/block:NoteCount}
+
+                                        <div class="share-this shrink cell align-self-middle">
+                                            <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                        </div>
+
+                                        <div class="reblog-this shrink cell align-self-middle">
+                                            {ReblogButton size="14" color="black"}
+                                        </div>
+
+                                        <div class="like-this shrink cell align-self-middle">
+                                            {LikeButton size="14" color="black"}
+                                        </div>
+
+                                    </div>
+                                    <!-- END POST SHARING -->
+
+                                </div>
+                            </div> 
+                        {/block:Photo}
+
+                        {block:Photoset}
+                            <div class="post-media-content">
+                                {Photoset}
+                            </div>
+
+                            <div class="post-entry-container">
+                                <div class="post-entry-content">
+
+                                {block:Caption}
+                                    {Caption}
+                                {/block:Caption}
+
+                                    <!-- POST META CONTENT -->
+                                    <div class="meta-content-wrap">
+
+                                        <!-- POST COLOPHON / CREATED BY -->
+                                        <div class="colophon-wrap grid-x align-middle">
+                                        {block:NotReblog} 
+                                            <img class="{AvatarShape}" src="{PortraitURL-64}" />
+                                            <p>{lang:By PostAuthorName 2}<span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:NotReblog} 
+
+                                        {block:RebloggedFrom} 
+                                            <img class="{AvatarShape}" src="{ReblogParentPortraitURL-64}" />
+                                            <p>{lang:Via}<a href="{ReblogParentURL}">&nbsp;{ReblogParentName}</a><span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:RebloggedFrom} 
+                                        </div>
+                                        <!-- END OF POST COLOPHON -->
+
+                                    </div>
+                                    <!-- END POST META CONTENT -->
+
+                                    <!-- POST SHARING -->
+                                    <div class="post-distribution grid-x align-middle">
+
+                                    {block:NoteCount}
+                                        <p class="meta-note-count shrink cell align-self-middle"><i class="fa fa-pencil" aria-hidden="true"></i> {NoteCount}</p>
+                                    {/block:NoteCount}
+
+                                        <div class="share-this shrink cell align-self-middle">
+                                            <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                        </div>
+
+                                        <div class="reblog-this shrink cell align-self-middle">
+                                            {ReblogButton size="14" color="black"}
+                                        </div>
+
+                                        <div class="like-this shrink cell align-self-middle">
+                                            {LikeButton size="14" color="black"}
+                                        </div>
+
+                                    </div>
+                                    <!-- END POST SHARING -->
+
+                                </div>
+                            </div>                               
+                        {/block:Photoset}
+
+                        {block:Panorama}
+                            <div class="post-media-content">
+
+                                <div class="post-photo-wrap">
+                                    {LinkOpenTag}
+                                        <img id="photo_{PostID}" src="{PhotoURL-HighRes}" alt="{PhotoAlt}" />
+                                    {LinkCloseTag}
+                                </div>
+
+                            </div>
+
+                            <div class="post-entry-container">
+                                <div class="post-entry-content">
+
+                                {block:Caption}
+                                    {Caption}
+                                {/block:Caption}
+
+                                    <!-- POST META CONTENT -->
+                                    <div class="meta-content-wrap">
+
+                                        <!-- POST COLOPHON / CREATED BY -->
+                                        <div class="colophon-wrap grid-x align-middle">
+                                        {block:NotReblog} 
+                                            <img class="{AvatarShape}" src="{PortraitURL-64}" />
+                                            <p>{lang:By PostAuthorName 2}<span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:NotReblog} 
+
+                                        {block:RebloggedFrom} 
+                                            <img class="{AvatarShape}" src="{ReblogParentPortraitURL-64}" />
+                                            <p>{lang:Via}<a href="{ReblogParentURL}">&nbsp;{ReblogParentName}</a><span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:RebloggedFrom} 
+                                        </div>
+                                        <!-- END OF POST COLOPHON -->
+
+                                    </div>
+                                    <!-- END POST META CONTENT -->
+
+                                    <!-- POST SHARING -->
+                                    <div class="post-distribution grid-x align-middle">
+
+                                    {block:NoteCount}
+                                        <p class="meta-note-count shrink cell align-self-middle"><i class="fa fa-pencil" aria-hidden="true"></i> {NoteCount}</p>
+                                    {/block:NoteCount}
+
+                                        <div class="share-this shrink cell align-self-middle">
+                                            <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                        </div>
+
+                                        <div class="reblog-this shrink cell align-self-middle">
+                                            {ReblogButton size="14" color="black"}
+                                        </div>
+
+                                        <div class="like-this shrink cell align-self-middle">
+                                            {LikeButton size="14" color="black"}
+                                        </div>
+
+                                    </div>
+                                    <!-- END POST SHARING -->
+
+                                </div>
+                            </div> 
+                        {/block:Panorama}
+
+                        {block:Video}
+                            <div class="post-media-content">
+                                {VideoEmbed-700}
+                            </div>
+
+                            <div class="post-entry-container">
+                                <div class="post-entry-content">
+
+                                {block:Caption}
+                                    {Caption}
+                                {/block:Caption}
+
+                                    <!-- POST META CONTENT -->
+                                    <div class="meta-content-wrap">
+
+                                        <!-- POST COLOPHON / CREATED BY -->
+                                        <div class="colophon-wrap grid-x align-middle">
+                                        {block:NotReblog} 
+                                            <img class="{AvatarShape}" src="{PortraitURL-64}" />
+                                            <p>{lang:By PostAuthorName 2}<span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:NotReblog} 
+
+                                        {block:RebloggedFrom} 
+                                            <img class="{AvatarShape}" src="{ReblogParentPortraitURL-64}" />
+                                            <p>{lang:Via}<a href="{ReblogParentURL}">&nbsp;{ReblogParentName}</a><span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:RebloggedFrom} 
+                                        </div>
+                                        <!-- END OF POST COLOPHON -->
+
+                                    </div>
+                                    <!-- END POST META CONTENT -->
+
+                                    <!-- POST SHARING -->
+                                    <div class="post-distribution grid-x align-middle">
+
+                                    {block:NoteCount}
+                                        <p class="meta-note-count shrink cell align-self-middle"><i class="fa fa-pencil" aria-hidden="true"></i> {NoteCount}</p>
+                                    {/block:NoteCount}
+
+                                        <div class="share-this shrink cell align-self-middle">
+                                            <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                        </div>
+
+                                        <div class="reblog-this shrink cell align-self-middle">
+                                            {ReblogButton size="14" color="black"}
+                                        </div>
+
+                                        <div class="like-this shrink cell align-self-middle">
+                                            {LikeButton size="14" color="black"}
+                                        </div>
+
+                                    </div>
+                                    <!-- END POST SHARING -->
+
+                                </div>
+                            </div>
+                        {/block:Video}
+
+                        {block:Audio}
+                            <div class="post-media-content grid-x align-center">
+                            {block:AudioEmbed}
+                                {AudioEmbed-250}
+                            {/block:AudioEmbed}
+                            </div>
+
+                            <div class="post-entry-container">
+                                <div class="post-entry-content">
+
+                                    <h2><a class="perma-post-title" href="{Permalink}" title="{lang:Post permalink}">{block:Artist}{Artist} - {/block:Artist}{block:TrackName}{TrackName}{/block:TrackName}<br /></a></h2>
+
+                                {block:Caption}
+                                    {Caption}
+                                {/block:Caption}
+
+                                    <!-- POST META CONTENT -->
+                                    <div class="meta-content-wrap">
+
+                                        <!-- POST COLOPHON / CREATED BY -->
+                                        <div class="colophon-wrap grid-x align-middle">
+                                        {block:NotReblog} 
+                                            <img class="{AvatarShape}" src="{PortraitURL-64}" />
+                                            <p>{lang:By PostAuthorName 2}<span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:NotReblog} 
+
+                                        {block:RebloggedFrom} 
+                                            <img class="{AvatarShape}" src="{ReblogParentPortraitURL-64}" />
+                                            <p>{lang:Via}<a href="{ReblogParentURL}">&nbsp;{ReblogParentName}</a><span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:RebloggedFrom} 
+                                        </div>
+                                        <!-- END OF POST COLOPHON -->
+
+                                    </div>
+                                    <!-- END POST META CONTENT -->
+
+                                    <!-- POST SHARING -->
+                                    <div class="post-distribution grid-x align-middle">
+
+                                    {block:NoteCount}
+                                        <p class="meta-note-count shrink cell align-self-middle"><i class="fa fa-pencil" aria-hidden="true"></i> {NoteCount}</p>
+                                    {/block:NoteCount}
+
+                                        <div class="share-this shrink cell align-self-middle">
+                                            <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                        </div>
+
+                                        <div class="reblog-this shrink cell align-self-middle">
+                                            {ReblogButton size="14" color="black"}
+                                        </div>
+
+                                        <div class="like-this shrink cell align-self-middle">
+                                            {LikeButton size="14" color="black"}
+                                        </div>
+
+                                    </div>
+                                    <!-- END POST SHARING -->
+
+                                </div>
+                            </div>
+                        {/block:Audio}
+
+                        {block:Text}
+                            <div class="post-entry-container">
+                                <div class="post-entry-content">
+
+                                {block:Title}
+                                    {LinkOpenTag}<h2 class="grid-x align-center"><a class="perma-post-title" href="{Permalink}" title="{lang:Post permalink}">{Title}</a></h2>{LinkCloseTag}
+                                {/block:Title}
+
+                                {Body}
+
+                                {block:Date}<!-- HIDES META INFO ON NON-POST-PAGES -->
+
+                                    <!-- POST META CONTENT -->
+                                    <div class="meta-content-wrap">
+
+                                        <!-- POST COLOPHON / CREATED BY -->
+                                        <div class="colophon-wrap grid-x align-middle">
+                                        {block:NotReblog} 
+                                            <img class="{AvatarShape}" src="{PortraitURL-64}" />
+                                            <p>{lang:By PostAuthorName 2}<span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:NotReblog} 
+
+                                        {block:RebloggedFrom} 
+                                            <img class="{AvatarShape}" src="{ReblogParentPortraitURL-64}" />
+                                            <p>{lang:Via}<a href="{ReblogParentURL}">&nbsp;{ReblogParentName}</a><span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:RebloggedFrom} 
+                                        </div>
+                                        <!-- END OF POST COLOPHON -->
+
+                                    </div>
+                                    <!-- END POST META CONTENT -->
+
+                                {/block:Date}<!-- HIDES META INFO ON NON-POST-PAGES -->
+
+                                    <!-- POST SHARING -->
+                                    <div class="post-distribution grid-x align-middle">
+
+                                    {block:NoteCount}
+                                        <p class="meta-note-count shrink cell align-self-middle"><i class="fa fa-pencil" aria-hidden="true"></i> {NoteCount}</p>
+                                    {/block:NoteCount}
+
+                                        <div class="share-this shrink cell align-self-middle">
+                                            <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                        </div>
+
+                                        <div class="reblog-this shrink cell align-self-middle">
+                                            {ReblogButton size="14" color="black"}
+                                        </div>
+
+                                        <div class="like-this shrink cell align-self-middle">
+                                            {LikeButton size="14" color="black"}
+                                        </div>
+
+                                    </div>
+                                    <!-- END POST SHARING -->
+
+                                </div>
+                            </div>
+                        {/block:Text}
+
+                        {block:Link}
+                            <div class="post-entry-container">
+                                <div class="post-entry-content">
+
+                                    <h2><a class="perma-post-title" href="{Permalink}" title="{lang:Post permalink}">{Name}</a></h2>
+
+                                {block:Excerpt}
+                                    <p><em>{Excerpt}</em></p>
+                                {/block:Excerpt}
+
+                                {block:Description}
+                                    <p>{Description}</p>
+                                {/block:Description}
+
+                                    <div class="post-link-button grid-x align-center">
+                                        <a href="{URL}" target="_blank" title="{lang:Link}"><h3>Visit Link &nbsp; &rarr;</h3><p><em>{block:Host}{Host}{/block:Host}</em></p></a>
+                                    </div>
+
+                                    <!-- POST META CONTENT -->
+                                    <div class="meta-content-wrap">
+
+                                        <!-- POST COLOPHON / CREATED BY -->
+                                        <div class="colophon-wrap grid-x align-middle">
+                                        {block:NotReblog} 
+                                            <img class="{AvatarShape}" src="{PortraitURL-64}" />
+                                            <p>{lang:By PostAuthorName 2}<span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:NotReblog} 
+
+                                        {block:RebloggedFrom} 
+                                            <img class="{AvatarShape}" src="{ReblogParentPortraitURL-64}" />
+                                            <p>{lang:Via}<a href="{ReblogParentURL}">&nbsp;{ReblogParentName}</a><span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:RebloggedFrom} 
+                                        </div>
+                                        <!-- END OF POST COLOPHON -->
+
+                                    </div>
+                                    <!-- END POST META CONTENT -->
+
+                                    <!-- POST SHARING -->
+                                    <div class="post-distribution grid-x align-middle">
+
+                                    {block:NoteCount}
+                                        <p class="meta-note-count shrink cell align-self-middle"><i class="fa fa-pencil" aria-hidden="true"></i> {NoteCount}</p>
+                                    {/block:NoteCount}
+
+                                        <div class="share-this shrink cell align-self-middle">
+                                            <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                        </div>
+
+                                        <div class="reblog-this shrink cell align-self-middle">
+                                            {ReblogButton size="14" color="black"}
+                                        </div>
+
+                                        <div class="like-this shrink cell align-self-middle">
+                                            {LikeButton size="14" color="black"}
+                                        </div>
+
+                                    </div>
+                                    <!-- END POST SHARING -->
+
+                                </div>
+                            </div>
+                        {/block:Link}
+
+                        {block:Quote}
+                            <div class="post-entry-container">
+                                <div class="post-entry-content">
+
+                                    <h2><blockquote><em><a class="perma-post-title" href="{Permalink}" title="{lang:Permalink for this post}">"{Quote}"</a></em></blockquote></h2>
+
+                                    {block:Source}<p><cite>- {Source}</cite></p>{/block:Source}
+
+                                    <!-- POST META CONTENT -->
+                                    <div class="meta-content-wrap">
+
+                                        <!-- POST COLOPHON / CREATED BY -->
+                                        <div class="colophon-wrap grid-x align-middle">
+                                        {block:NotReblog} 
+                                            <img class="{AvatarShape}" src="{PortraitURL-64}" />
+                                            <p>{lang:By PostAuthorName 2}<span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:NotReblog} 
+
+                                        {block:RebloggedFrom} 
+                                            <img class="{AvatarShape}" src="{ReblogParentPortraitURL-64}" />
+                                            <p>{lang:Via}<a href="{ReblogParentURL}">&nbsp;{ReblogParentName}</a><span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:RebloggedFrom} 
+                                        </div>
+                                        <!-- END OF POST COLOPHON -->
+
+                                    </div>
+                                    <!-- END POST META CONTENT -->
+
+                                    <!-- POST SHARING -->
+                                    <div class="post-distribution grid-x align-middle">
+
+                                    {block:NoteCount}
+                                        <p class="meta-note-count shrink cell align-self-middle"><i class="fa fa-pencil" aria-hidden="true"></i> {NoteCount}</p>
+                                    {/block:NoteCount}
+
+                                        <div class="share-this shrink cell align-self-middle">
+                                            <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                        </div>
+
+                                        <div class="reblog-this shrink cell align-self-middle">
+                                            {ReblogButton size="14" color="black"}
+                                        </div>
+
+                                        <div class="like-this shrink cell align-self-middle">
+                                            {LikeButton size="14" color="black"}
+                                        </div>
+
+                                    </div>
+                                    <!-- END POST SHARING -->
+
+                                </div> 
+                            </div>
+                        {/block:Quote}
+
+                        {block:Chat}
+                            <div class="post-entry-container">
+                                <div class="post-entry-content">
+
+                                    <div class="perma-chat-wrapper">
+                                    {block:Title}
+                                        <h2><a class="perma-post-title" href="{Permalink}">{Title}</a></h2>
+                                    {/block:Title}
+
+                                        <ul class="perma-post-chat no-bullet">
+                                            {block:Lines}{block:Label}
+                                            <li class="{Alt}">
+                                                <span><p><b>{Label}</b> {Line}</p></span>
+                                            </li>
+                                            <hr />
+                                            {/block:Label}{/block:Lines}
+                                        </ul>
+                                    </div>
+
+                                    <!-- POST META CONTENT -->
+                                    <div class="meta-content-wrap">
+
+                                        <!-- POST COLOPHON / CREATED BY -->
+                                        <div class="colophon-wrap grid-x align-middle">
+                                        {block:NotReblog} 
+                                            <img class="{AvatarShape}" src="{PortraitURL-64}" />
+                                            <p>{lang:By PostAuthorName 2}<span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:NotReblog} 
+
+                                        {block:RebloggedFrom} 
+                                            <img class="{AvatarShape}" src="{ReblogParentPortraitURL-64}" />
+                                            <p>{lang:Via}<a href="{ReblogParentURL}">&nbsp;{ReblogParentName}</a><span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:RebloggedFrom} 
+                                        </div>
+                                        <!-- END OF POST COLOPHON -->
+
+                                    </div>
+                                    <!-- END POST META CONTENT -->
+
+                                    <!-- POST SHARING -->
+                                    <div class="post-distribution grid-x align-middle">
+
+                                    {block:NoteCount}
+                                        <p class="meta-note-count shrink cell align-self-middle"><i class="fa fa-pencil" aria-hidden="true"></i> {NoteCount}</p>
+                                    {/block:NoteCount}
+
+                                        <div class="share-this shrink cell align-self-middle">
+                                            <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                        </div>
+
+                                        <div class="reblog-this shrink cell align-self-middle">
+                                            {ReblogButton size="14" color="black"}
+                                        </div>
+
+                                        <div class="like-this shrink cell align-self-middle">
+                                            {LikeButton size="14" color="black"}
+                                        </div>
+
+                                    </div>
+                                    <!-- END POST SHARING -->
+
+                                </div>
+                            </div>
+                        {/block:Chat}
+
+                        {block:Answer}
+                            <div class="post-entry-container">
+                                <div class="post-entry-content">
+
+                                    <div class="perma-post-asker">
+                                        <img class="post-asker-avatar {AvatarShape}" src="{AskerPortraitURL-128}" alt="Asker Avatar" />
+                                        <h2>{lang:Asker asked 2}:</h2>
+                                        <p>{Question}</p>
+                                    </div>
+
+                                    <hr class="answer-divider"/>
+
+                                    <div class="perma-post-answer">
+                                    {block:Answerer}
+                                        <img class="post-answer-avatar {AvatarShape}" src="{AnswererPortraitURL-128}" alt="Answerer Avatar">
+                                        <h2>{Answerer}:</h2>
+                                        {Answer}
+                                    {/block:Answerer}
+                                    {Replies}
+                                    </div>
+
+                                    <!-- POST META CONTENT -->
+                                    <div class="meta-content-wrap">
+
+                                        <!-- POST COLOPHON / CREATED BY -->
+                                        <div class="colophon-wrap grid-x align-middle">
+                                        {block:NotReblog} 
+                                            <img class="{AvatarShape}" src="{PortraitURL-64}" />
+                                            <p>{lang:By PostAuthorName 2}<span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:NotReblog} 
+
+                                        {block:RebloggedFrom} 
+                                            <img class="{AvatarShape}" src="{ReblogParentPortraitURL-64}" />
+                                            <p>{lang:Via}<a href="{ReblogParentURL}">&nbsp;{ReblogParentName}</a><span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                                        {/block:RebloggedFrom} 
+                                        </div>
+                                        <!-- END OF POST COLOPHON -->
+
+                                    </div>
+                                    <!-- END POST META CONTENT -->
+
+                                    <!-- POST SHARING -->
+                                    <div class="post-distribution grid-x align-middle">
+
+                                    {block:NoteCount}
+                                        <p class="meta-note-count shrink cell align-self-middle"><i class="fa fa-pencil" aria-hidden="true"></i> {NoteCount}</p>
+                                    {/block:NoteCount}
+
+                                        <div class="share-this shrink cell align-self-middle">
+                                            <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                        </div>
+
+                                        <div class="reblog-this shrink cell align-self-middle">
+                                            {ReblogButton size="14" color="black"}
+                                        </div>
+
+                                        <div class="like-this shrink cell align-self-middle">
+                                            {LikeButton size="14" color="black"}
+                                        </div>
+
+                                    </div>
+                                    <!-- END POST SHARING -->
+
+                                </div>
+                            </div>
+                        {/block:Answer}
+                            
+                            <div class="perma-post-comments">
+                                <h4 class="sidebar-section-title grid-x align-center">{lang:Comment}</h4>
+                                
+                            {block:IfNotHideFacebookComments}    
+                                <div class="fb-comments" data-href="{Permalink}" data-width="100%"></div>
+                            {/block:IfNotHideFacebookComments}
+
+                            {block:IfDisqusShortname}    
+                                <div id="disqus_thread">
+                                    <noscript>
+                                        Javascript must be enabled in your browser to view <a href="//disqus.com/?ref_noscript">{lang:Blog comments powered by Disqus}</a>
+                                    </noscript>
+                                </div>
+                            {/block:IfDisqusShortname}
+
+                            </div>
+                            
+                        </article>
+                        
+                    {block:Date}
+                        <!-- PERMALINK RIGHT SIDEBAR -->
+                        <aside class="perma-right-sidebar">
+
+                            <!-- POST COLOPHON / CREATED BY -->
+                            <div class="colophon-wrap side-colophon grid-x align-middle">
+                            {block:NotReblog} 
+                                <img class="{AvatarShape}" src="{PortraitURL-128}" />
+                                <p>{lang:By PostAuthorName 2}<span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                            {/block:NotReblog} 
+
+                            {block:RebloggedFrom} 
+                                <img class="{AvatarShape}" src="{ReblogParentPortraitURL-128}" />
+                                <p>{lang:Via}<a href="{ReblogParentURL}">&nbsp;{ReblogParentName}</a><span> &#45; {ShortMonth} {DayOfMonth}&#44; {Year}</span></p>
+                            {/block:RebloggedFrom} 
+                            </div>
+                            <!-- END OF POST COLOPHON -->
+
+                            <!-- POST SHARING -->
+                            <div class="post-distribution grid-x align-middle">
+
+                            {block:NoteCount}
+                                <p class="meta-note-count shrink cell align-self-middle"><i class="fa fa-pencil" aria-hidden="true"></i> {NoteCount}</p>
+                            {/block:NoteCount}
+
+                                <div class="share-this shrink cell align-self-middle">
+                                    <a data-open="shareModal-{PostID}"><i class="fa fa-ellipsis-h"></i></a>
+                                </div>
+
+                                <div class="reblog-this shrink cell align-self-middle">
+                                    {ReblogButton size="14" color="black"}
+                                </div>
+
+                                <div class="like-this shrink cell align-self-middle">
+                                    {LikeButton size="14" color="black"}
+                                </div>
+
+                            </div>
+
+                        <!-- PERMALINK PAGINATION -->    
+                        {block:PermalinkPagination}
+                            <div class="perma-post-pagi grid-x align-center">
+
+                            {block:PreviousPost}
+                                <a class="pagi-previous" href="{PreviousPost}" title="{lang:Previous post}">{lang:Previous post}</a>
+                            {/block:PreviousPost}
+
+                            {block:NextPost}
+                                <a class="pagi-next" href="{NextPost}" title="{lang:Next post}">{lang:Next post}</a>
+                            {/block:NextPost}
+
+                            </div>
+                        {/block:PermalinkPagination}
+                        <!-- END OF PERMALINK PAGINATION -->
+
+                        {block:HasTags}
+                            <h4 class="sidebar-section-title grid-x align-center">{lang:Tags}</h4>
+                            <div class="perma-side-tags grid-x align-center">
+                            {block:Tags}
+                                <p><a href="{TagURLChrono}" class="post-tags">#{Tag}</a></p>
+                            {/block:Tags}
+                            </div>
+                        {/block:HasTags}
+
+                        {block:PostNotes} 
+                            <div class="perma-post-notes">
+                                <h4 class="sidebar-section-title grid-x align-center">{lang:Notes}</h4>
+                                {PostNotes-64}
+                            </div>
+                        {/block:PostNotes} 
+
+                            <div class="perma-post-comments">
+
+                                <h4 class="sidebar-section-title grid-x align-center">{lang:Comment}</h4>
+                            {block:IfNotHideFacebookComments}    
+                                <div class="fb-comments" data-href="{Permalink}" data-width="100%"></div>
+                            {/block:IfNotHideFacebookComments}
+
+                            {block:IfDisqusShortname}    
+                                <div id="disqus_thread">
+                                    <noscript>
+                                        Javascript must be enabled in your browser to view <a href="//disqus.com/?ref_noscript">{lang:Blog comments powered by Disqus}</a>
+                                    </noscript>
+                                </div>
+                            {/block:IfDisqusShortname}
+
+                            </div>
+
+                        </aside>
+                    {/block:Date}
+
+                        <div id="shareModal-{PostID}" class="share reveal full" data-reveal>
+                            <ul class="more-share-container no-bullet">
+                                <h1>{lang:Share this}:</h1>
+                                <li><a href="//www.facebook.com/share.php?u={ShortURL}" title="{lang:Share this} Facebook" target="_blank"><img src="//static.tumblr.com/cmghtlm/PYPnmku6n/facebook.png" /></a></li>
+                                <li><a href="//twitter.com/intent/tweet?url={ShortURL}" title="{lang:Tweet this}" target="_blank"><img src="//static.tumblr.com/cmghtlm/GOSnmku9n/twitter.png" /></a></li>
+                                <li><a href="//plus.google.com/share?url={ShortURL}" title="{lang:Share this} Google+" target="_blank"><img src="//static.tumblr.com/cmghtlm/9j6nmku75/g_.png" /></a></li>
+                                <li><a href="//www.pinterest.com/pin/create/button/?url={ShortURL}" title="{lang:Share this} Pinterest" target="_blank"><img src="//static.tumblr.com/cmghtlm/Ygdnmku7l/pinterest.png" /></a></li>
+                            </ul>
+                            <a class="close-modal-button" data-close><span class="cross-ico"></span></a>
+                        </div>
+
+                        {/block:Posts}
+
+                    </section>
+                    <!-- END OF PERMALINK POST CONTENT -->  
+                    
+                {/block:PermalinkPage}
+                <!-- end permalink page -->
+            </main>
+            <!-- end main content -->
+            
+            {block:IfInstagramID}
+            <div class="instagram-wrapper ani-div">
+                <div class="widget-title">
+                    <p>{text:Instagram Feed Title}</p>
+                </div>
+                <ul id="instagram-feed" class="no-bullet"></ul>
+            </div>
+            {/block:IfInstagramID}
+            
+            <!-- start footer -->
+            <footer class="blog-footer">
+                <a class="footer-avatar no-op" href="{BlogURL}"><img class="{AvatarShape}" src="{PortraitURL-128}" /></a>
+                <h2>{Title}</h2>
+                {block:IfFooterTextMessage}<p class="footer-message">{text:Footer Text Message}</p>{/block:IfFooterTextMessage}
+                <p class="creation">&#169; {BlogTitle} {CopyrightYears} <a href="//www.tumblr.com/themes/by/artistic-influence" target="_blank">A creation by Artistic Influence</a> {lang:Powered by Tumblr 2}</p>
+            </footer>
+        </div> <!-- off canvas wrap -->
+
+        <!-- start modals-->                                  
+        <div id="searchModal" class="reveal full" data-reveal>
+            <div class="search-container">
+                <div class="search-wrapper">
+                    <h1>{lang:Search}:</h1>
+                    <form action="/search" method="get" class="nav-search grid-x small-12 medium-8">
+                        <input class="cell small-10 medium-11" type="text" name="q" value="{SearchQuery}" id="search-input" placeholder="{lang:Search keywords}"/>
+                        <button class="cell small-2 medium-1" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <a class="close-modal-button" data-close><span class="cross-ico"></span></a>
+        </div>
+        
+        {block:IfPinterestBoardURL}
+        <script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
+        {/block:IfPinterestBoardURL}
+        <script src="//static.tumblr.com/cmghtlm/iwbnprdu8/jquery.js"></script>
+        <script src="//static.tumblr.com/honophf/q5Aoz5j2o/astoria_plugins.js"></script>
+        <script src="//static.tumblr.com/vppzax2/zsgo35ewv/tweenmax.min.js"></script> 
+        <script src="//static.tumblr.com/vppzax2/N8wo35et5/scrolltoplugin.min.js"></script>
+
+        <script>
+            // JS contents
+            // -----------
+
+            // # Add class names for Vine & Instagram embeds
+            // # Foundation declaration
+            // # Initialize isotope
+            // # Resize FB Widget
+            // # Scroll Reveal
+            // # Parallax - Stellar
+            // # Initialize Smooth Scroll - Tween
+            // # Instagram Feed           
+            // # Pre loader
+            // # Initalize Disqus Comments
+            // # Infinite Scroll
+            // # Responsive photoset
+
+            function addMediaEmbedClassnames() {
+                $('.vine-embed').parent().parent().addClass('vine-container');
+                $('.instagram-media').parent().parent().addClass('instagram-container');
+            }
+
+            addMediaEmbedClassnames();
+
+            $(document).foundation(); // # Foundation declaration
+
+            var $container = $('.content-area');
+
+            // # Initialize isotope            
+            $container.isotope({
+                itemSelector: '.post',
+                masonry: {
+                    columnWidth: '.post',
+                    gutter: '.gutter-sizer'
+                }
+            });
+
+            // # Resize FB Widget
+            function resizeFbWidget(parentContainer) {
+                var container_width = $(parentContainer + ' #fb_container').width();
+                var fb_widget_code = '<div class="fb-page" data-href="{text:Facebook Feed Page URL}/" data-tabs="timeline, messages, events" data-width="'+ container_width +'" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="{text:Facebook Feed Page URL}/"><a href="{text:Facebook Feed Page URL}/">{text:Facebook Feed Title}</a></blockquote></div></div>';
+                
+                $(parentContainer + ' #fb_container').html(fb_widget_code);
+                FB.XFBML.parse( );
+            }
+
+            function addResizeSensors() {
+                // detect elements that resize and re-layout isotope
+                new ResizeSensor(jQuery('.post'), function() {
+                    $container.isotope('layout');
+                });
+                
+                // detect elements that resize and re-layout isotope
+                new ResizeSensor(jQuery('.content-area'), function() {
+                    $container.isotope('layout');
+                    resizeFbWidget('#offCanvas');
+                    resizeFbWidget('#masthead');
+                });
+            }
+
+            addResizeSensors();            
+
+            {block:IfNotDisableScrollReveal}
+            // # Scroll Reveal
+            var config = {
+                viewFactor : 0.15,
+                duration   : 800,
+                distance   : "0px",
+                scale      : 0,
+                reset       : true,
+                viewOffset: { top: 0 }
+            };
+            window.sr = ScrollReveal( config );
+            sr.reveal('.ani-div');
+            {/block:IfNotDisableScrollReveal}
+  
+            enquire.register("screen and (min-width: 64.063em)", {
+                match : function() {
+                    {block:IndexPage}
+                        // # Parallax - Stellar
+                        $(window).stellar({
+                            horizontalScrolling: false,
+                            verticalScrolling: true,
+                            responsive: true,
+                            parallaxElements: true,
+                            verticalOffset: 40
+                        });
+                    {/block:IndexPage}
+                    
+                    {block:IfNotDisableSmoothScroll}
+                    // # Initialize Smooth Scroll - Tween
+                    var $window = $(window);
+                    var scrollTime = 0.7;
+                    var scrollDistance = 300;
+    
+                    $window.on("mousewheel DOMMouseScroll", function(event){
+    
+                        event.preventDefault(); 
+    
+                        var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+                        var scrollTop = $window.scrollTop();
+                        var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+    
+                        TweenMax.to($window, scrollTime, {
+                            scrollTo : { y: finalScroll, autoKill:true },
+                            ease: Power1.easeOut,
+                            overwrite: 5                            
+                        });
+                    });
+                    {/block:IfNotDisableSmoothScroll}
+                }
+            });
+                  
+
+            // # Instagram Feed
+            {block:IfInstagramID}
+            $("#instagram-feed").jqinstapics({
+                "user_id": "{text:Instagram ID}",
+                "access_token": "{text:Instagram Token}",
+                "count": {text:Instagram Feed Count}
+            });
+            {/block:IfInstagramID} 
+            
+            (function () {                
+                // # Pre loader
+                window.addEventListener('DOMContentLoaded', function() {
+                    new QueryLoader2(document.querySelector("body"), {
+                        barColor: "{color:Loading Screen Bar Color}",
+                        backgroundColor: "{color:Loading Screen Background Color}",
+                        percentage: false,
+                        barHeight: 2,
+                        minimumTime: 200,
+                        fadeOutTime: 1000
+                    });
+                });  
+            })();
+
+            // # Initalize Disqus Comments
+            function runDisqus() {
+                var disqus_shortname = '{text:Disqus Shortname}'; 
+                var disqus_url = '{Permalink}';
+                var url_arr = disqus_url.split('/');
+                var disqus_identifier = url_arr[4];
+
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+
+                console.log('{BlogURL}');
+            }
+
+            $(document).ready(function(){
+                {block:IfDisqusShortname}
+                runDisqus(); // Call Disqus comments
+                {/block:IfDisqusShortname}
+
+                // Facebook Feed Widget
+                setTimeout(function() {
+                    resizeFbWidget('#offCanvas');
+                    resizeFbWidget('#masthead');
+                }, 100);
+            });
+
+            // # Infinite Scroll
+            var infiniteContainer = new InfiniteScroll( '.content-area', {
+                nextSelector: "#load-more a",
+                path: "#load-more a",
+                append: ".post",
+                status: '.page-load-status',
+                {block:IfNotInfiniteScroll}
+                button: '#load-more a',
+                scrollThreshold: false
+                {/block:IfNotInfiniteScroll}
+            });
+
+            infiniteContainer.on( 'append', function( response, path, items ) {
+                addMediaEmbedClassnames();
+                
+                var $newElemsIDs = $(items).map(function () { return this.id; }).get();
+                                    
+                Tumblr.LikeButton.get_status_by_post_ids($newElemsIDs); // get like status for posts
+                
+                var $newElems = $(items).css({ opacity: 0 });
+
+                addResizeSensors();
+
+                $newElems.imagesLoaded(function(){
+                    $newElems.animate({ opacity: 1 });
+                    $container.isotope( 'appended', $newElems, true );
+                    resizePhotosets(); // responsive photosets
+                    {block:IfNotDisableScrollReveal}sr.sync();{/block:IfNotDisableScrollReveal}
+                    // magnific Popup Lightbox
+                    $('.lightbox').each(function() {
+                         $(this).magnificPopup({ 
+                            delegate: 'a',
+                            type:'image', 
+                            gallery: {
+                                enabled: true,
+                                navigateByImgClick: true,
+                            }
+                        });
+                    });
+                });
+                
+                $(document).foundation(); // foundation reflow
+            });
+
+            // # Responsive photoset
+            var photosetBlock = document.body.querySelector('.html_photoset');
+
+            if (photosetBlock != null) {
+                function resizePhotosets(){
+                    var parentWidth = document.body.querySelector('.html_photoset').offsetWidth; 
+                    var photosets = document.body.querySelectorAll('iframe.photoset');
+                    for(var i = 0; i < photosets.length; ++i){
+                        var photoset = photosets[i];
+                        photoset.width = parentWidth;
+                    }   
+                }
+                window.onload = resizePhotosets;
+                window.onresize = resizePhotosets; 
+            }
+        </script>
+        
+    </body>
+    
+</html>
